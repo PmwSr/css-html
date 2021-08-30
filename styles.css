@@ -1,0 +1,56 @@
+h1 {
+  color: blue;
+  font-size: 50px;
+  font-style: italic;
+}
+
+/* block - 같은 라인에 다른 속성이 올 수 없다.*/
+div {
+  background-color: skyblue;
+  height: 100px;
+  width: 100px;
+}
+
+/* inline - 같은 라인에 다른 속성이 올 수 있다.*/
+span {
+  background-color: tomato;
+}
+
+/*block을 inline으로 inline을 block으로 바꿀수도 있다.
+inline은 높이(height)와 너비(width)를 가질수 없다.
+*/
+#blockSpan {
+  display: block;
+  background-color: wheat;
+}
+
+#inlineDiv {
+  display: inline;
+  height: 20px;
+  width: 20px;
+  background-color: skyblue;
+}
+
+#outside {
+  background-color: slategray;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+#inside {
+  background-color: thistle;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+#box {
+  background-color: wheat;
+  height: 200px;
+  width: 200px;
+}
+p {
+  margin: 0;
+  margin-top: 10px;
+}

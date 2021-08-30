@@ -1,0 +1,26 @@
+ex) css : 작성방식 - selector { } 
+
+h1 태그의 스타일을 바꾸려면 
+
+h1 { 
+  color: blue;
+  font-size: 20px;
+  ....
+}
+
+위와 같이 selector { 속성 } 이렇게 사용해주면된다.
+
+
+block - 같은 라인에 다른 속성이 올 수 없다.
+div 등등
+
+inline - 같은 라인에 다른 속성이 올 수 있다.
+span 등등
+
+block을 inline으로 inline을 block으로 바꿀수도 있다.
+inline은 높이(height)와 너비(width)를 가질수 없다.
+
+margine은 박스의 경계 밖의 공간이다.
+padding은 박스의 경계 안쪽 공간이다.
+collaosing margins 두개의 속성의 경계가 같을 경우 하나의 경계로 취급해서
+위아래의 margine을 동시에 움직이게 된다.
