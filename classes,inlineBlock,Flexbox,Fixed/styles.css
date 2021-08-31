@@ -1,0 +1,97 @@
+body {
+  margin: 20px;
+  height: 500vh;
+}
+
+span {
+  background-color: teal;
+}
+/*
+classes 같은 특징을 갖는것 끼리 묶어서 class 화 시킨다.
+동시에 여러개를 변경 할 수 있다.
+*/
+.btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.teal {
+  background-color: teal;
+}
+
+/**********************************************************/
+/*
+inline-block은 block을 inline의 형태로 바꿀수 있지만 
+정해진 형식이 없다 화면의 크기가 바뀌면 지 맘대로 바뀐다
+사용하지 않는게 더 좋다.
+*/
+div {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+}
+
+/*
+flex는 부모에서 선언해줘야 한다. 
+flex는 block형태를 계속 유지시켜주면서 가로로 나열 할 수 있게 해준다.
+화면 크기에 따라 동적으로 작동한다.justify-content는 가로 align-items은 세로로 움직인다.
+가로와 세로를 바꾸고 싶을때는 flex-direction: cloumn을 사용한다. 
+이렇게 되면 justify-content는 세로 align-items는 가로로 바뀐다.
+*/
+#parents {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  justify-content: space-between;
+}
+
+.son {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+}
+
+/**********************************************************/
+/* position fixed */
+
+#different {
+  width: 300px;
+  height: 300px;
+  background-color: steelblue;
+  /* 
+  fixed를 사용할 경우 다른 레이어에 위치하게 된다. top, left, bottom, right를 줄경우
+  다른 것들은 신경쓰지않고 다른 레이어에서 독립적으로 움직인다.
+  */
+  position: fixed;
+}
+
+/* position relative */
+#rel-p {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  /*
+  relative는 처음 점을 기준으로 
+  top, right, left, bottom을 사용해서 움직인다.
+  */
+  position: relative;
+}
+#rel-s {
+  width: 50px;
+  height: 50px;
+  background-color: thistle;
+  /*
+  absolute 는 relative한 부모를 찾고 부모를 기준으로 움직인다 
+  만약 relative한 부모가 없다면 body를 기준으로 움직이게된다.
+  */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  bottom: -10px;
+}
