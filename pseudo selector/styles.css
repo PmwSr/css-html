@@ -1,0 +1,48 @@
+div {
+  width: 150px;
+  height: 150px;
+  background-color: teal;
+  position: relative;
+}
+
+/* 원하는 것을 선택해서 바꿀수있다. */
+/* div의 첫번째 */
+div:first-child {
+  background-color: tomato;
+}
+/* div의 세번째 */
+div:nth-child(3) {
+  background-color: cadetblue;
+}
+/* div의 마지막 */
+div:last-child {
+  background-color: bisque;
+}
+/* 
+even:짝수인 div를 선택
+odd:홀수인 div를 선택
+다른 방법으로는 
+nth-child(2n):짝수
+nth-child(2n-1):홀수
+*/
+div:nth-child(even) {
+  background-color: chocolate;
+}
+
+span {
+  color: tomato;
+  padding: 5px;
+  border-radius: 5px;
+}
+/*p안에 있는 span을 선택*/
+p span {
+  color: teal;
+}
+/* div바로 밑에있는 span을 선택 */
+div > span {
+  text-decoration: underline;
+}
+/* p다음으로 오는 span을 선택 */
+p + span {
+  text-decoration: underline;
+}
