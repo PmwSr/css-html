@@ -33,10 +33,11 @@ span {
   color: tomato;
   padding: 5px;
   border-radius: 5px;
+  display: flex;
 }
 /*p안에 있는 span을 선택*/
 p span {
-  color: teal;
+  color: skyblue;
 }
 /* div바로 밑에있는 span을 선택 */
 div > span {
