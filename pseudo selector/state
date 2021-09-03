@@ -1,0 +1,16 @@
+Active, hover, focus, focus-within, visited
+
+active 해당 요소를 마우스로 클릭했을 때 효과를 적용
+
+hover 마우스가 해당 요소 위를 지나갈 때 효과를 적용
+
+focus 키보드로 선택되었을 때 효과를 적용
+
+focus-within 부모 요소에게 적용. 자신의 자식 요소 중 하나가 focused되었을 때 효과를 적용
+
+visited 방문한 사이트일 경우에 효과를 적용
+
+조건을 나열해 여러 상황을 설정할 수 있음.
+예 high-tag:hover low-tag:focus{
+}
+인 경우, 상위 요소위에 마우스 커서가 있고, 하위 요소가 focused되었을 때 효과를 적용하게 된다.

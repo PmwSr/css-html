@@ -28,6 +28,18 @@ nth-child(2n-1):홀수
 div:nth-child(even) {
   background-color: chocolate;
 }
+#outside {
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+}
+#outside2 {
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+}
 
 span {
   color: tomato;
@@ -46,4 +58,37 @@ div > span {
 /* p다음으로 오는 span을 선택 */
 p + span {
   text-decoration: underline;
+}
+/* 
+아래 같은 경우는 p와 같은 span전부를 선택한다.
+p ~ span {
+  ~~~
+}
+*/
+
+/* input태그에 required가 들어가있는 것을 바꿔준다. */
+input:required {
+  background-color: pink;
+}
+
+/* input태그에 placeholder가 First name인것을 바꿔준다. */
+input[placeholder="First name"] {
+  background-color: coral;
+}
+
+/* input태그에 placeholder에 name이 들어간 것을 바꿔준다. */
+input[placeholder~="name"] {
+  background-color: cornflowerblue;
+}
+/*
+
+*= "hello"인 경우에는 ~~~hello~~ 처럼 공백이 없어도 선택이되고
+~= "hello"인 경우에는 ~~~ hello ~~ 인 경우애만 선택이 된다.
+
+*/
+input[placeholder*="Num"] {
+  background-color: steelblue;
+}
+input[placeholder~="Num"] {
+  background-color: yellowgreen;
 }
