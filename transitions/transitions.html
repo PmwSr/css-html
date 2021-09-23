@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>transitions</title>
+    <style>
+      a {
+        color: white;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        /*
+        다른상태로 변화할때 애니메이션처럼 주는 방법 transition
+        transition은 항상 상위 element에 있어야한다 그리고 하위element에는 항상 
+        무엇을 어떻게 바꿀건지 적혀있어야 한다. 위에 background-color가 바뀐다고 적혀있어도
+        아래에 아무것도 없으면 적용되지 않는다.
+        
+        아래처럼 사용 할 경우에는 배경을 바꾸는데 10초 색을 바꾸는데 5초가 걸리게 된다.
+        모든것을 한번에 바꾸고 싶으면 아래처럼 사용
+        transition: all 5s ease-in-out; 
+        */
+        transition: background-color 5s ease-in-out, color 5s ease-in-out,
+          border-radius 5s ease-in-out;
+      }
+
+      a:hover {
+        color: tomato;
+        background-color: wheat;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go home</a>
+  </body>
+</html>

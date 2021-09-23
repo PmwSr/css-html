@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title> </title>
+    <style>
+      /*root로 지정해줄 경우 root에서 값을 한번만 바꾸면 모든 --main-color의 색이 변경된다.*/
+      :root {
+        --main-color: #489ee3;
+        --default-border: 1px solid var(--main-color);
+      }
+      h1 {
+        color: var(--main-color);
+      }
+      p {
+        color: var(--main-color);
+      }
+      p {
+        color: black;
+      }
+      div {
+        height: 100px;
+        width: 500px;
+        border: var(--default-border);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>This is main color</h1>
+    </div>
+    <p>this is another color</p>
+  </body>
+</html>
