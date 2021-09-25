@@ -4,9 +4,16 @@
     <title>trasnform</title>
     <style>
       img {
-        border: 10px solid black;
+        border: 5px solid black;
         border-radius: 50%;
-        transform: translateX(300px);
+        /*trasform은 다른 면에 존재. */
+        /*transform: translateX(300px);*/
+        /*transition은 root에서만 사용가능하다.*/
+        transition: transform 5s ease-in-out;
+        /*아래의 transform을 5초에 걸쳐서 실행*/
+      }
+      img:hover {
+        transform: translateX(90px);
       }
     </style>
   </head>
