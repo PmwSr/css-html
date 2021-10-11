@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    div {
+      height: 50px;
+      width: 50px;
+      background-color: teal;
+    }
+
+    @media screen and (min-width:200px) {
+      div {
+        background-color: antiquewhite;
+      }
+    }
+
+    @media screen and (min-width:401px) and (max-width:999px) {
+      div {
+        background-color: skyblue;
+      }
+    }
+
+    @media screen and (min-width:1000px) {
+      div {
+        background-color: slateblue;
+      }
+    }
+
+    @media screen and (orientation: landscape) {
+      div {
+        background-color: slategrey;
+      }
+      span {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <span>pmw</span>
+</body>
+</html>
