@@ -1,0 +1,51 @@
+vscode 단축키 
+1. 같은 단어들을 선택해서 수정가능
+    mac - 커맨드키 + d 
+    window - ctrl + d
+2. 원하는 곳에 커서 생성
+    mac - 옵션키 + click
+    window - alt + click
+3. 선택된 행을 위아래로 움직임
+    mac - 옵션키 + ↑\↓
+    window - alt + ↑\↓
+4. 선택된 행을 위아래로 복사
+    mac - 옵션키 + shift + ↑\↓
+    window - alt + shift + ↑\↓
+5. 선택된(드래그) 모든곳에 커서 생성
+    mac - 옵션키 + shift + I
+    window - alt + shift + I
+6. 마우스 위치에따라 커서 생성 2, 5번 과는 다름
+    mac - 옵션키 + shift + drag
+    window - alt + shift + drag
+7. 화면의 시작이나 끝으로 가고싶을 경우
+    mac - 커맨드키 + ↑\↓
+    window - ctrl + home/end
+8. 사이드바 숨김, 나타냄
+    mac - 커맨드키 + b
+    window - ctrl + b
+
+1. .gitignore 파알을 무시할때 사용한다.
+    ex) .gitignore 파일에 .파일명을 사용하면 그 파일을 무시하게된다.
+
+2. BEM(block element modifier)  
+    1. Block component 
+        .btn {}
+    2. Element that depends upon the block
+        .btn__price {}
+    3. Modifier that changes the style of the block
+        .btn--orange {}
+        .btn--big {}
+    ex) <a class="btn btn--big btn--orange" href="https://css-tricks.com"> - 버튼의 모양을 여러클래스로 나타낸다.
+          <span class="btn__price">$9.99</span> - 버튼안에 있는 가격
+          <span class="btn__text">Subscribe</span> - 버튼안에 있는 text
+
+3. 아이콘 추가 방법 2가지종류
+    - 직접 이미지 아이콘 추가
+    - SVG
+    
+    SVG방법
+    - Heroicons [Heroicons - Free Open Source SVG Icon Library]
+    (https://heroicons.dev/)
+    - Fontawesome [Font Awesome]
+    (https://fontawesome.com/)
+    - 스크립트는 body 태그 닫기 직전에 위치시킴 
